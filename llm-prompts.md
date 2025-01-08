@@ -1,4 +1,8 @@
-# Demande initiale :
+# Prompts ChatGPT (ordre chronologique)
+- https://chatgpt.com/share/677ea35c-81cc-800f-898f-a5f906081a5f
+- https://chatgpt.com/share/677ea3a3-5b28-800f-8c59-6d7726990d58
+- https://chatgpt.com/share/677ea3b7-4978-800f-aedb-0ad3007d8ccd
+# Demandes initiales au LLM :
 ## Créer un spalsh screen
 Demande à partir de "rien", en expliquant le contexte (app React Native), mais uniquement le splash screen (pas mentionné le reste)
 - Résultat moyen, mais ça vient sûrement du tel / build
