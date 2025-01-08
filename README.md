@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# Application Interactive : Chat, Chien et Carte
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Description
 
-## Get started
+Cette application permet d'interagir avec un chat et un chien, d'afficher une carte centrée sur la position de l'utilisateur avec les villes de Paris et Toulon, de suivre le nombre de clics sur le chat et le chien, et de préparer un SMS en appuyant sur l'image du chien. Un bouton permet de quitter l'application.
 
-1. Install dependencies
+### Fonctionnalités principales :
+- **Chat interactif** : Un chat qui joue un son lorsque vous cliquez dessus et qui augmente le compteur de clics.
+- **Chien interactif** : Un chien qui, lorsqu'on clique dessus, prépare un SMS.
+- **Carte interactive** : La carte affiche la position de l'utilisateur ainsi que les villes de Paris et Toulon.
+- **Compteurs de clics** : Affichez le nombre de fois où vous avez cliqué sur le chat et le chien.
+- **Bouton Quitter** : Permet de quitter l'application.
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
+1. Clonez ce dépôt sur votre machine locale :
+   - `git clone <URL_DU_REPOSITORY>`
 
-   ```bash
-    npx expo start
-   ```
+2. Accédez au dossier du projet :
+   - `cd <Dossier_Du_Projet>`
 
-In the output, you'll find options to open the app in a
+3. Installez les dépendances :
+   - `npm install`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+4. Lancez l'application :
+   - `npm start`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Fonctionnalités détaillées
 
-## Get a fresh project
+### 1. Chat Interactif
+Le chat est une image cliquable. Lorsqu'on clique dessus, un son se joue et le compteur de clics du chat augmente.
 
-When you're ready, run:
+- **Image du chat** : ![Image du chat](./assets/images/cat_placeholder.png)
+- **Son du chat** : Lors de chaque clic, un bruit de chat est joué.
 
-```bash
-npm run reset-project
-```
+### 2. Chien Interactif
+Le chien est une autre image cliquable. Lorsque l'utilisateur clique sur l'image du chien, un SMS est préparé.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **Image du chien** : ![Image du chien](./assets/images/dog_placeholder.png)
 
-## Learn more
+### 3. Carte Interactive
+La carte est centrée sur la position de l'utilisateur, avec les villes de Paris et Toulon affichées.
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Vue de la carte** : ![Carte](./assets/images/map_placeholder.png)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 4. Compteurs de Clics
+Chaque animal (chat et chien) possède un compteur qui enregistre le nombre de fois où l'utilisateur a cliqué dessus.
 
-## Join the community
+### 5. Quitter l'application
+Un bouton est disponible pour quitter l'application.
 
-Join our community of developers creating universal apps.
+## Technologies utilisées
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **React Native / Expo** : Pour le développement de l'application mobile.
+- **Expo Audio** : Pour jouer des sons lors des clics sur le chat.
+- **React Navigation** : Pour la gestion de la navigation entre les écrans.
+- **AsyncStorage** : Pour stocker les compteurs de clics de manière persistante.
+- **Expo Battery** : Pour afficher l'état de la batterie et changer la couleur de fond de l'application en fonction du niveau de batterie.
+
+## Démos
+
+### 1. Chat et Chien
+
+Voici une démonstration des animaux interactifs :
+
+![Chat](./assets/images/cat.jpeg) | ![Chien](./assets/images/dog.jpeg)
+
+### 2. Carte
+
+Voici une vue de la carte avec la position de l'utilisateur, Paris et Toulon :
+
+![Carte](./assets/images/map.jpeg)
+
+### 3 Quit
+![Quit](./assets/images/quit.webp)
+
+## 4 count
+![Count](./assets/images/counter.webp)
+
+
+---
+
+## License
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE) pour plus de détails.
